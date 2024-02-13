@@ -1,7 +1,8 @@
 # Movie Recommender Web App
 
 ## Demo Video
-[Watch Demo Video](https://github.com/kumarUjjawal3621/movie_recommendation/assets/136676393/22a580ad-5fdc-4c8f-9162-bde732d25982)
+![Untitled design](https://github.com/kumarUjjawal3621/movie_recommendation/assets/136676393/498a33af-71f1-441d-9558-1e1874a277b4)
+
 
 ## Workflow
 
