@@ -1,6 +1,7 @@
 # Movie Recommender Web App
 
 ## Demo Video
+#### User Input: Discover movies based on your preferences – explore by genre, cast, keyword, or description.
 ![Untitled design](https://github.com/kumarUjjawal3621/movie_recommendation/assets/136676393/498a33af-71f1-441d-9558-1e1874a277b4)
 
 
