@@ -20,11 +20,12 @@
 - For any query, the system returns the top 20 movies with the highest cosine similarity.
 
 ### Deployment
-#### Database
-- Stored the data in a MySQL server.
-- Built a cursor in `app.py` to fetch the data according to the query.
 
-#### UI
-- Developed the user interface using Streamlit.
-- Deployed the webpage locally.
+ #### Database
+ - Stored the data in a MySQL server.
+ - Built a cursor in `app.py` to fetch the data according to the query.
+
+ #### UI
+ - Developed the user interface using Streamlit.
+ - Deployed the webpage locally.
 
