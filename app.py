@@ -22,6 +22,7 @@ import shutil
 shutil.rmtree('temp_directory')
 ###
 
+conn = st.connection('mysql', type='sql')
 
 
 mycursor=mydb.cursor()
