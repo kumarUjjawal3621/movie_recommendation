@@ -22,13 +22,7 @@ import shutil
 shutil.rmtree('temp_directory')
 ###
 
-# Establish a connection to MySQL Server
-mydb = mysql.connector.connect(
-    host="127.0.0.1",
-    user="root",
-    password="362121",
-    database="movies"
-)
+
 
 mycursor=mydb.cursor()
 print("Connection Established")
