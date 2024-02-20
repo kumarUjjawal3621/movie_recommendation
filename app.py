@@ -9,14 +9,24 @@ with open('models/dictionary.pkl', 'rb') as f:
     dictionary = pickle.load(f)
 with open('models/tfidf.pkl', 'rb') as f:
     tfidf = pickle.load(f)
-with open('models/index.pkl', 'rb') as f:
+
+###
+import zipfile
+zip_file_path = 'models/index.zip'
+
+with zipfile.ZipFile(zip_file_path, 'r') as zip_ref:
+    zip_ref.extract('index.pkl', 'temp_directory')
+with open('temp_directory/index.pkl', 'rb') as f:
     index = pickle.load(f)
+import shutil
+shutil.rmtree('temp_directory')
+###
 
 # Establish a connection to MySQL Server
 mydb = mysql.connector.connect(
     host="127.0.0.1",
     user="root",
-    password="password",
+    password="362121",
     database="movies"
 )
 
@@ -25,7 +35,7 @@ print("Connection Established")
 
 # This function brings image for a movie poster using tmdb api
 def fetch_poster(movie_id):
-    url = "https://api.themoviedb.org/3/movie/{}?api_key=your_api_key".format(movie_id)
+    url = "https://api.themoviedb.org/3/movie/{}?api_key=8265bd1679663a7ea12ac168da84d2e8&language=en-US".format(movie_id)
     data = requests.get(url)
     data = data.json()
     poster_path = data['poster_path']
